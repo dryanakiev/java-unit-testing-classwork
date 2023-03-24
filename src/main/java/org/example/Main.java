@@ -19,7 +19,7 @@ public class Main {
         else if (studentResult < 80){
             return 'C';
         }
-        else if (studentResult < 90){
+        else if (studentResult < 91){
             return 'B';
         }
         else {

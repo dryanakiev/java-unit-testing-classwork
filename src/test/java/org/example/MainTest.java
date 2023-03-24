@@ -108,4 +108,17 @@ class MainTest {
         Main obj = new Main();
         assertThrows(IllegalArgumentException.class, ()-> obj.getGrade(101));
     }
+
+    @Test
+    void testIfResultNinetyReturnsGradeA(){
+        //Arrange
+        char expectedGrade = 'A';
+
+        //Act
+        Main obj = new Main();
+        char actualGrade = obj.getGrade(90);
+
+        //Assert
+        assertEquals(expectedGrade,actualGrade);
+    }
 }
